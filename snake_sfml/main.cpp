@@ -186,7 +186,7 @@ void draw(sf::RenderWindow& window) {
     
     if (isGameOver) {
         // Drawing "Game Over" sign
-        sf::Text gameOverText("Game Over" , font);
+        sf::Text gameOverText("YOU DIED" , font);
         gameOverText.setCharacterSize(40);
         
         sf::FloatRect textRect = gameOverText.getLocalBounds();
@@ -195,7 +195,7 @@ void draw(sf::RenderWindow& window) {
                                textRect.top  + textRect.height / 2.0);
         gameOverText.setPosition(sf::Vector2f(window.getView().getSize().x / 2.0,
                                               window.getView().getSize().y / 2.3));
-        gameOverText.setFillColor(sf::Color::White);
+        gameOverText.setFillColor(sf::Color(149, 13, 13));
         window.draw(gameOverText);
     }
     
